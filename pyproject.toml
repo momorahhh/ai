@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "cloud-uncensored-ai"
+version = "1.0.0"
+description = "Web-based uncensored AI running on cloud infrastructure"
+author = "AI Agent Developer"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.3.3"
+requests = "^2.31.0"
+gunicorn = "^21.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
