@@ -1,0 +1,20 @@
+modules = ["python-3.10"]
+
+[nix]
+channel = "stable-22_11"
+
+[deployment]
+run = ["python", "main.py"]
+deploy = ["python", "main.py"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[languages]
+
+[languages.python]
+pattern = "**/*.py"
+
+[languages.python.languageServer]
+start = "pylsp"
